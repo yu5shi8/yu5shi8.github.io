@@ -1,5 +1,25 @@
+html, body {
+  min-width: 320px;
+  height: 100%;
+}
+
 body {
   background: -moz-linear-gradient(25deg, #ffecd2, #fcb69f);
   background: -webkit-linear-gradient(25deg, #ffecd2, #fcb69f);
   background: linear-gradient(65deg, #ffecd2, #fcb69f);
+}
+
+.wrapper {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -24px;
+  margin-left: -137px;
+}
+
+.hello_world {
+  color: #fefefe;
+  font-size: 3rem;
+  line-height: 100%;
 }

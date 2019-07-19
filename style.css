@@ -3,3 +3,14 @@ body {
   background: -webkit-linear-gradient(25deg, #ffecd2, #fcb69f);
   background: linear-gradient(65deg, #ffecd2, #fcb69f);
 }
+
+div {
+  width: 320px;
+  color: #fefefe;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}

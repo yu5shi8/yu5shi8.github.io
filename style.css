@@ -27,10 +27,12 @@ body {
 }
 
 .scroll-top a {
+  display: none;
+  animation: fadeout;
+  animation-duration: 0.8s;
   position: fixed;
   right: 0;
   bottom: 0;
-  display: block;
   color: #fcb69f;
   text-decoration: none;
   padding: 20px;
@@ -49,6 +51,27 @@ body {
   border: 1px solid #fefefe;
 }
 
-.invisible {
-  display: none;
+.invisible a {
+  display: block;
+  animation-name: fadein;
+  animation-duration: 0.8s;
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+

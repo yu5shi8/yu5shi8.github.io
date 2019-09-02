@@ -7,11 +7,11 @@
 // 今何ピクセルの場所にいるかを取得する
 window.addEventListener('scroll', () => {
   let scrollTop = document.scrollingElement.scrollTop;
-  // もしも３００px以上スクロールした状態だったら、右下のページトップに戻るボタンを表示する
   const scrollButton = document.getElementById('scroll-button');
-  if (scrollTop < 300) {
+  // もしも３００px以上スクロールした状態だったら、右下のページトップに戻るボタンを表示する
+  if (scrollTop > 260) {
     scrollButton.classList.add('invisible');
-  } else {
+    } else {
     // そうでなければ表示しない
     scrollButton.classList.remove('invisible');
   }

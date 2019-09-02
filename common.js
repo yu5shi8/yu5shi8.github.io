@@ -14,9 +14,7 @@ window.addEventListener('scroll', () => {
 }, false);
 
 // 【２】 ページトップボタンをクリックしたら、スクロールしながらページトップに戻る
-document.getElementById('scroll-button').onclick = function(){
-// スクロールしながら1秒でページトップへ戻る
-  
-};
+var scroll = new SmoothScroll('a[href*="#"]');
+
 
 

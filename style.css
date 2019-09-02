@@ -26,18 +26,15 @@ body {
   line-height: 100%;
 }
 
-.invisible {
-  display: none;
-}
-
-.scroll-top > a {
+.scroll-top a {
   position: fixed;
   right: 0;
   bottom: 0;
+  display: block;
   color: #fcb69f;
   text-decoration: none;
   padding: 20px;
-  border-radius: 50%;
+  border-radius: 100%;
   text-align: center;
   line-height: 20px;
   margin-right: 10px;
@@ -46,8 +43,12 @@ body {
   border: 1px solid #fefefe;
 }
 
-.scroll-top > a:hover {
+.scroll-top a:hover {
   color: #fefefe;
   background-color: #fcb69f;
   border: 1px solid #fefefe;
+}
+
+.invisible {
+  display: none;
 }

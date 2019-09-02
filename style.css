@@ -1,12 +1,15 @@
 html, body {
+  font-family: 'Lexend Deca', sans-serif;
   min-width: 320px;
-  height: 100%;
+  height: 3000px;
+  /* height: 100%; */
 }
 
 body {
-  background: -moz-linear-gradient(25deg, #ffecd2, #fcb69f);
-  background: -webkit-linear-gradient(25deg, #ffecd2, #fcb69f);
-  background: linear-gradient(65deg, #ffecd2, #fcb69f);
+  color: #fefefe;
+  background: -moz-linear-gradient(25deg, #fcb69f, #ffecd2);
+  background: -webkit-linear-gradient(25deg, #fcb69f, #ffecd2);
+  background: linear-gradient(65deg, #fcb69f, #ffecd2);
 }
 
 .wrapper {
@@ -18,8 +21,42 @@ body {
   margin-left: -137px;
 }
 
-.hello_world {
-  color: #fefefe;
+.hello-world {
   font-size: 3rem;
   line-height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -134px;
+  margin-top: -24px; 
+}
+
+.scroll-top a {
+  display: block;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: #fcb69f;
+  text-decoration: none;
+  width: 60px;
+  padding: 20px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.scroll-top a:hover {
+  color: #fefefe;
+  background-color: #fcb69f;
+  border: 1px solid #fefefe;
+}
+
+.scroll-top.visible a {
+  opacity: 1;
 }

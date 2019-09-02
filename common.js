@@ -7,9 +7,9 @@ window.addEventListener('scroll', () => {
   let scrollTop = document.scrollingElement.scrollTop;
   const scrollButton = document.getElementById('scroll-button');
   if (scrollTop > 140) {
-    scrollButton.classList.add('invisible');
+    scrollButton.classList.add('visible');
     } else {
-    scrollButton.classList.remove('invisible');
+    scrollButton.classList.remove('visible');
   }
 }, false);
 

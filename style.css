@@ -7,9 +7,9 @@ html, body {
 
 body {
   color: #fefefe;
-  background: -moz-linear-gradient(25deg, #ffecd2, #fcb69f);
-  background: -webkit-linear-gradient(25deg, #ffecd2, #fcb69f);
-  background: linear-gradient(65deg, #ffecd2, #fcb69f);
+  background: -moz-linear-gradient(25deg, #fcb69f, #ffecd2);
+  background: -webkit-linear-gradient(25deg, #fcb69f, #ffecd2);
+  background: linear-gradient(65deg, #fcb69f, #ffecd2);
 }
 
 .wrapper {
@@ -24,6 +24,11 @@ body {
 .hello-world {
   font-size: 3rem;
   line-height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -134px;
+  margin-top: -24px; 
 }
 
 .scroll-top a {
